@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- This is the Play CDN for use of tailwind in the web -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Title of the website in bar -->
+    <title>Brett Balquist</title>
+
+</head>
+<body>
+
+    <section class="flex flex-col justify-center items-center mt-56 mb-12">
+        <!-- Again the logo and time -->
+        <div class="">
+            <a href="index.html"> <img width="175" height="90" src="../public/imgs/brettSupreme2.png"></img></a>
+            <br>
+            <section id="dateDisplay">loading...</section>
+        </div>
+    </section>
+
+    <section class="flex justify-center">
+
+        <div class="grid grid-cols-2 gap-1">
+
+            <div class="">
+                    <a href="index.html"> <img width="300" height="300" src="../public/imgs/brettSupreme2.png"></img></a>
+            </div>
+            <div>
+                    <a href="index.html"> <img width="300" height="300" src="../public/imgs/brettSupreme2.png"></img></a>
+            </div>
+            <div>
+                    <a href="index.html"> <img width="300" height="300" src="../public/imgs/brettSupreme2.png"></img></a>
+            </div>
+            <div>
+                    <a href="index.html"> <img width="300" height="300" src="../public/imgs/brettSupreme2.png"></img></a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Copy the above section and add margin top of 1 i.e. mt-1 to make it the same -->
+
+
+
+
+    <!-- This script is what puts he date and time below the logo -->
+    <script>
+        function updateDateTime() {
+        let newDate = new Date();
+        let options = {
+            month: '2-digit',
+            day: '2-digit',
+            year: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true,
+            timeZone: 'America/Chicago'
+        };
+        let formattedDate = `${newDate.toLocaleDateString('en-US', options)} Chicago`;
+        document.getElementById('dateDisplay').textContent = formattedDate;
+        }
+        // Call the function intially
+        updateDateTime();
+        // Run the function to update every second
+        setInterval(updateDateTime, 1000);
+        
+    </script>
+</body>
+</html>
