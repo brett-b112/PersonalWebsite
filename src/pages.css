@@ -13,6 +13,10 @@ li{
     background-color: red;
     color: white;
 }
+.backButton:hover{
+    background-color: black;
+    color: white;
+}
 #greenAlert {
     object-fit: cover;
     width: 300px;

@@ -9,50 +9,45 @@
     <link rel="stylesheet" href="pages.css">
     <!-- This is the Play CDN for use of tailwind in the web -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Title of the website in bar -->
+
+
     <title>Brett Balquist</title>
 
 </head>
 <body>
 
-    <section class="flex flex-col justify-center items-center mt-24 mb-12">
+<section class="flex flex-col justify-center items-center h-screen">
+
         <!-- Again the logo and time -->
-        <div class="">
+        <div class="h-1/6 ml-5 mb-10">
             <a href="index.html"> <img width="175" height="90" src="../public/imgs/brettSupreme2.png"></img></a>
             <br>
             <section id="dateDisplay">loading...</section>
         </div>
-    </section>
-
-    <section class="flex justify-center">
-
-        <div class="grid grid-cols-2 gap-1">
-
-            <div class="">
-                    <a href="project1.html"> <img width="300" height="300" src="../public/imgs/DNADataStruct.jpeg"></img></a>
+        <!-- Main info section -->
+        <div class="w-96 mb-20 ">
+            <strong>KU Audio Reader Database and Interface</strong>
+            <hr>
+            The KU Audio Reader is a non-profit organization on the KU campus that provides
+            audio materials such as publications, local newspapers, and books.
+            <br>
+            <br>
+            The KU Audio Reader had issues managing subscriptions because of the nature 
+            of the KU endowment which prohibited their ability to use a auto-renewal. 
+            As a result, they had issues tracking expiration dates and this provided a database and UI that could support this.
+            The project was built with postgres, expressJS, react, and NodeJS.
+            <br>
+            <br>
+            Github is private****
+            
+            <div class="w-3/4 text-right ">
+            <a class="backButton" href="projects.html">back</a>
             </div>
-            <div>
-                    <a href="project2.html"> <img width="300" height="300" src="../public/imgs/bbqMap.png"></img></a>
-            </div>
-            <div>
-                    <a href="project3.html"> <img width="300" height="300" src="../public/imgs/kuAR.png"></img></a>
-            </div>
-            <div >
-                    <a href="project4.html"> <img id="greenAlert" src="../public/imgs/greenAlert.png"></img></a>
-            </div>
-
-
         </div>
-
-    </section>
-
-    <!-- Copy the above section and add margin top of 1 i.e. mt-1 to make it the same -->
-
-<section class="flex flex-col justify-center items-center mt-12">
 
         <div class="w-1/3 mb-5">
             <a class="mainList" href="index.html">home</a>
-            <a class="mainList" href="about.html">about</a>
+            <a class="mainList" href="projects.html">projects</a>
             <a class="mainList" href="photography.html">photography</a>
             <a href="https://www.supremenewyork.com" target="_blank" class="mainList" >inspiration</a>
         </div>
@@ -61,7 +56,12 @@
             made with much :wq 
         </div>
 
-</section>
+<section>
+
+
+
+
+
 
     <!-- This script is what puts he date and time below the logo -->
     <script>
