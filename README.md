@@ -1,9 +1,5 @@
 # Welcome to my personal website
 --------
-This website is broken into 3 section (this may change)
-1. about
-2. projects
-3. photography
 
 ## About
 ------
