@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- This is the Play CDN for use of tailwind in the web -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>Brett Balquist</title>
+
+    </head>
+    <body>
+
+    <section class="flex flex-col justify-center items-center mt-36 mb-12">
+
+        <!-- Again the logo and time -->
+        <div class="h-1/6 ml-5 mb-10">
+            <a href="../index.html"> <img width="175" height="90" src="../public/imgs/brettSupreme2.png"></img></a>
+            <br>
+            <section id="dateDisplay">loading...</section>
+        </div>
+
+        <!-- Main info section -->
+        <div class="flex flex-col items-center justify-center w-3/4 mb-8">
+
+            <div class="text-wrap w-3/4 mb-8">
+                <b>
+                <h3>Tuesday May 21st</h3>
+                <hr>
+                </b>
+                Buddhism holds four noble truths be it suffering exists; it has a cause;
+                it has an end; and it has a cause to bring about its end;
+                <br>
+                <br>
+                The greeks had a word <i>'eudaimonia'</i> which  holds core tenants 
+                such that you take responsibility, live with virtue, and only focus on what you can control.
+                <br>
+                <br>
+                The ideology of stoicism teaches that virtue (the highest good) is based on knowledge. That one must live with reason; one must be 
+                be in harmony with the fate that governs nature; one must be indifferent to misfortune of any form
+                <br>
+                <br>
+                Phil Stutz is a therapist that was featured in the documentary <i>Stutz</i> on Netflix.
+                He speaks on topics:
+                <ul>
+                    <li><b>Reality</b></li>
+                        <ul style="margin-left:2em;"> 
+                            <li>There are three givens in life <b>pain, uncertainty, and constant work</b> </li>
+                            <li> <b>Life Force:</b> You have a life force which working on improves your life. A pyramid with your body as the base, then your relationships with others in the middle,
+                            and your relationship with yourself at the top.</li>
+                            <li> <b>Part X:</b> If you’ve embraced the Aspects of Reality and are getting better at working on your Life Force, it doesn’t mean the work is easy, especially when judgment, adversity and punishing circumstances can trigger a darker side of your psyche to appear. Stutz calls this darkness Part X, and describes it as “an invisible force that keeps you from changing.” Imagine Part X as the villain on the journey of your evolution as a human. What does your Part X say to you?</li>
+                        </ul>
+                    <li><b>Tools</b></li>
+                        <ul style="margin-left:2em;"> 
+                            <li><b>String of Pearls</b> n Stutz’s illustration, each circle or “pearl” is an action — and, since each pearl is a similar size, you can think of each action having the same value, no matter what it is. This means that every large or small action in your life (brushing your teeth, deciding to end a relationship) is just that: a thing to do. You are the only person who can put the next pearl on the string. But, within each pearl is a dark spot (Stutz calls it a “turd”), which is a reminder that no effort you make will be perfect. The key is to acknowledge that and keep adding to the string anyway.</li>
+                            <li><b>The Shadow:</b>According to Stutz, the Shadow is the part of yourself you’re ashamed of — the part of you that you wish didn’t exist. Stutz says to talk to your Shadow, ask it how it feels about you and ask it how it feels to be denied or avoided. In order to work with the Shadow, Stutz says you have to be able to visualize  it, honor it and engage with it. The Shadow and Part X aren’t quite the same: Think of Part X as your doubts and deepest fears, and the Shadow as the by-product of believing whatever Part X tells you.</li>
+                            <li><b>The Snapshot/ The Realm of Illusion</b></li>
+                        </ul>
+                    <li><b>The Work</b></li>
+                </ul>
+                </div>
+
+        </div>
+        
+        <div class="w-1/3 mb-5">
+            <a class="mainList" href="../index.html">home</a>
+            <a class="mainList" href="about.html">about</a>
+            <a class="mainList" href="projects.html">projects</a>
+            <a class="mainList" href="photography.html">photography</a>
+        </div>
+
+        <div class="w-1/4 text-right">
+            made with much :wq 
+        </div>
+
+<section>
+    <!-- This script is what puts he date and time below the logo -->
+    <script>
+        function updateDateTime() {
+        let newDate = new Date();
+        let options = {
+            month: '2-digit',
+            day: '2-digit',
+            year: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true,
+            timeZone: 'America/Chicago'
+        };
+        let formattedDate = `${newDate.toLocaleDateString('en-US', options)} Chicago`;
+        document.getElementById('dateDisplay').textContent = formattedDate;
+        }
+        // Call the function intially
+        updateDateTime();
+        // Run the function to update every second
+        setInterval(updateDateTime, 1000);
+        
+    </script>
+</body>
+</html>
